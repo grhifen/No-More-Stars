@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
-export var speed = 200
+export var speed = 300
 var velocity = Vector2()
 var mouse_position = null
 var direction
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	velocity = Vector2(0, 0)
 	mouse_position = get_global_mouse_position()
